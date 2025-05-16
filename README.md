@@ -29,7 +29,12 @@ echo 'export PATH=/data2/yiquan2/llama/ollama/bin:$PATH' >> ~/.zshrc
 source ~/.zshrc
 ```
 ### 2. Start Using and Installing DeepSeek
-Once Ollama is installed, you can start using the DeepSeek model. Run the following command to launch it:
+Once Ollama is installed, you can start using the DeepSeek model. 
+Open one termial and run:
+```sh
+ollama serve
+```
+Open another terminal and run the following command to launch it:
 ```sh
 ollama run deepseek-r1:8b
 ```
