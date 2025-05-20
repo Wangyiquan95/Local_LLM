@@ -66,11 +66,17 @@ first, download embedding model by ollama:
 ollama pull nomic-embed-text
 ```
 go to webui page setting -> admin settings -> documents: 
+
 choose Embedding Model Engine as ollama
+
 embedding model as nomic-embed-text:latest
+
 embedding batch size --> 256
+
 Top k --> 10
+
 Chunk size --> 1500
+
 Chunk overlap --> 300
 
 then go to workspace -> knowledge, add knowledge.
