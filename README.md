@@ -59,3 +59,18 @@ ssh -N -L 8080:localhost:8080 user@server.ip.address
 http://0.0.0.0:8080/
 ```
 ![chatbot](./image2.png)
+
+### 6. define knowledge and build RAG
+first, download embedding model by ollama:
+```sh
+ollama pull nomic-embed-text
+```
+go to webui page setting -> admin settings -> documents: 
+choose Embedding Model Engine as ollama
+embedding model as nomic-embed-text:latest
+embedding batch size --> 256
+Top k --> 10
+Chunk size --> 1500
+Chunk overlap --> 300
+
+then go to workspace -> knowledge, add knowledge.
