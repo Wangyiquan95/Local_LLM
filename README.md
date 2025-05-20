@@ -46,13 +46,13 @@ ollama run deepseek-r1:32b "Please summarize the following scientific paper. Inc
 In a new terminal session (or using tmux), run the following command to install and serve Open WebUI:
 ```sh
 pip install open-webui
-open-webui serve
+open-webui serve --port 8080
 
 ```
 ### 4. Connect from Your PC
 To connect from your local PC, use SSH port forwarding:
 ```sh
-ssh -L 5000:localhost:5000 server-id
+ssh -N -L 8080:localhost:8080 user@server.ip.address
 ```
 ### 5. Open in Your Browser and Start chatting
 ```
