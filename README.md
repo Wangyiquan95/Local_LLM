@@ -80,3 +80,29 @@ Chunk size --> 1500
 Chunk overlap --> 300
 
 then go to workspace -> knowledge, add knowledge.
+
+### 7. image generation
+first, download stable diffusion model:
+```sh
+wget -q https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh
+chmod +x ./webui.sh
+```
+then, run diffusion-webui by:
+```sh
+./webui.sh --api --listen
+```
+Setting Up Open WebUI with AUTOMATIC1111
+In Open WebUI, navigate to the Admin Panel > Settings > Images menu.
+
+Set the Image Generation Engine field to Default (Automatic1111).
+
+In the API URL field, enter the address where AUTOMATIC1111's API is accessible:
+
+http://<your_automatic1111_address>:7860/
+
+#### generation
+First, use a text generation model to write a prompt for image generation.
+
+After the response has finished, you can click the Picture icon to generate an image.
+
+After the image has finished generating, it will be returned automatically in chat.
