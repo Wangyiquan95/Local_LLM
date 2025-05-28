@@ -161,7 +161,7 @@ Seed : seed, 25
 
 Set Set Default Model to the name of the model file being used: flux1-dev.safetensors
 
-#### generation
+### 9. Generation in WebUI
 First, use a text generation model to write a prompt for image generation.
 
 After the response has finished, you can click the Picture icon to generate an image.
