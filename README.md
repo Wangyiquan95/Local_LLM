@@ -81,7 +81,7 @@ Chunk overlap --> 300
 
 then go to workspace -> knowledge, add knowledge.
 
-### 7. image generation
+### 7. image generation: by AUTOMATIC1111
 first, download stable diffusion model:
 ```sh
 wget -q https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh
@@ -99,6 +99,68 @@ Set the Image Generation Engine field to Default (Automatic1111).
 In the API URL field, enter the address where AUTOMATIC1111's API is accessible:
 
 http://<your_automatic1111_address>:7860/
+
+### 8. image generation: by ComfyUI
+#### First, download ComfyUI:
+```sh
+git clone https://github.com/comfyanonymous/ComfyUI.git
+cd ComfyUI
+```
+then, install required packages by:
+```sh
+pip install -r requirements.txt
+```
+to start ComfyUI:
+```sh
+python main.py
+```
+#### Download Flux model
+We are going to use Flux1-dev model, Go to:
+👉 https://huggingface.co/black-forest-labs/FLUX.1-dev
+
+Log in to your Hugging Face account.
+
+Click the “Agree and access repository” button.
+
+Then, download model by huggingface-cli:
+```sh
+huggingface-cli logout
+huggingface-cli login
+huggingface-cli download black-forest-labs/FLUX.1-dev flux1-dev.safetensors \                                                                      
+  --local-dir ComfyUI/models/diffusion_models
+cp models/diffusion_models/flux1-dev.safetensors models/checkpoints
+huggingface-cli download black-forest-labs/FLUX.1-dev ae.safetensors \                                                                             
+  --local-dir ComfyUI/models/vae
+huggingface-cli download comfyanonymous/flux_text_encoders clip_l.safetensors \                                                                    
+  --local-dir ComfyUI/models/clip
+huggingface-cli download comfyanonymous/flux_text_encoders t5xxl_fp16.safetensors \                                                                
+  --local-dir ComfyUI/models/clip
+```
+now you can use ComfyUI by open: http://<your_comfyui_address>:8188/
+
+
+#### Setting Up Open WebUI with ComfyUI
+In Open WebUI, navigate to the Admin Panel > Settings > Images menu.
+
+In the Image Generation Engine field, choose ComfyUI.
+
+In the API URL field, enter the address where ComfyUI's API is accessible, following this format: http://<your_comfyui_address>:8188/.
+
+Set the environment variable COMFYUI_BASE_URL to this address to ensure it persists within the WebUI.
+
+Click the "Click here to upload a workflow.json file" button.
+
+Select the workflow_api.json file to import the exported workflow from ComfyUI into Open WebUI.
+
+After importing the workflow, you must map the ComfyUI Workflow Nodes according to the imported workflow node IDs:
+Prompt : text, 6
+Model : ckpt_name, 12
+Width : width, 27
+Height : height, 27
+Steps : steps, 17
+Seed : seed, 25
+
+Set Set Default Model to the name of the model file being used: flux1-dev.safetensors
 
 #### generation
 First, use a text generation model to write a prompt for image generation.
