@@ -1,5 +1,4 @@
 # LLM_local_setup
-![DeepSeek logo](./image1.png)
 
 This guide will walk you through setting up the **DeepSeek** model or other models and running it locally with a chat UI (100% free).
 
