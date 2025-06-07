@@ -27,8 +27,6 @@ Open Chrome and navigate to: http://0.0.0.0:8080/
 
 Sign up for a new account via the provided registration form.
 
-Account Registration
-
 **Step 4: Start Chatting**
 
 Log in and begin interacting with the LLM. 
