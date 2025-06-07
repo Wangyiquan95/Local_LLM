@@ -39,7 +39,7 @@ Refer to the examples provided within the interface to explore available functio
 
 [PDF Question Answering](./Paper%20PDF%20Q&A.pdf): Allows you to ask questions based on the content of a PDF research paper.
 
-[Paper Text to Slides](./Paper%20Text%20toSlides.pdf): Generates presentation slides from the text of a research paper.
+[Paper Text to Slides](./Paper%20Text%20to%20Slides.pdf): Generates presentation slides from the text of a research paper.
 
 [Scientific Image Generation](./Scientific%20Image%20Generation.pdf): Creates scientific images based on provided prompts or data.
 
