@@ -39,4 +39,4 @@ Log in and begin interacting with the LLM.
 
 Refer to the examples provided within the interface to explore available functionalities.
 
-[PDF Question Answering](./Paper PDF Q&A.pdf)
+[PDF Question Answering](./Paper%20PDF%20Q&A.pdf)
