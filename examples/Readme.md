@@ -21,7 +21,7 @@ ssh -N -L 8080:localhost:8080 user_id@nicwulab-linux2.life.illinois.edu
 
 Open Chrome and navigate to: http://0.0.0.0:8080/
 
-Web Interface
+![Web Interface](./sign_up.png)
 
 **Step 3: Account Registration**
 
