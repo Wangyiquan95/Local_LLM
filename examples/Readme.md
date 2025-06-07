@@ -16,7 +16,7 @@ Connect to the remote server using the following command:
 ```bash
 ssh -N -L 8080:localhost:8080 user_id@nicwulab-linux2.life.illinois.edu
 ```
-
+![SSH Connection](./ssh_connect.png)
 **Step 2: Access the Web Interface**
 
 Open Chrome and navigate to: http://0.0.0.0:8080/
@@ -33,4 +33,10 @@ Account Registration
 
 Log in and begin interacting with the LLM. 
 
+![Chat Interface](./chat_interface.png)
+
+**Examples**
+
 Refer to the examples provided within the interface to explore available functionalities.
+
+[PDF Question Answering](./Paper PDF Q&A.pdf)
