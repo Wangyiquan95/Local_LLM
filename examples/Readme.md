@@ -39,4 +39,10 @@ Log in and begin interacting with the LLM.
 
 Refer to the examples provided within the interface to explore available functionalities.
 
-[PDF Question Answering](./Paper%20PDF%20Q&A.pdf)
+[PDF Question Answering](./Paper%20PDF%20Q&A.pdf):Allows you to ask questions based on the content of a PDF research paper.
+
+[Paper Text to Slides](./Paper%20Text%20toSlides.pdf): Generates presentation slides from the text of a research paper.
+
+[Scientific Image Generation](./Scientific%20Image%20Generation.pdf): Creates scientific images based on provided prompts or data.
+
+[Figure to Codes](./Figure%20to%20Codes.pdf): Transforms figures or diagrams into corresponding code snippets.
