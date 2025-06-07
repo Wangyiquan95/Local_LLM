@@ -41,6 +41,10 @@ Refer to the examples provided within the interface to explore available functio
 
 [Paper Text to Slides](./Paper%20Text%20to%20Slides.pdf): Generates presentation slides from the text of a research paper.
 
-[Scientific Image Generation](./Scientific%20Image%20Generation.pdf): Creates scientific images based on provided prompts or data.
+[Scientific Image Generation](./Image%20Generation.pdf): Creates scientific images based on provided prompts or data.
 
 [Figure to Codes](./Figure%20to%20Codes.pdf): Transforms figures or diagrams into corresponding code snippets.
+
+Paper Writing (coming): Write paper based on provided references and template.
+
+Experimental Protocol (coming): Question answering about an experimental protocol.
