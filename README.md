@@ -167,3 +167,10 @@ First, use a text generation model to write a prompt for image generation.
 After the response has finished, you can click the Picture icon to generate an image.
 
 After the image has finished generating, it will be returned automatically in chat.
+
+### 10. Tool usage
+Tools are small Python scripts that add superpowers to your LLM. When enabled, they allow your chatbot to do amazing things — like search the web, scrape data, generate images, talk back using AI voices, and more.
+There are two easy ways to install Tools in Open WebUI:
+
+- Go to Community Tool Library -> Choose a Tool, then click the Get button -> Enter your Open WebUI instance’s IP address or URL -> Click “Import to WebUI” — done!
+- write custom tool using python 
