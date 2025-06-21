@@ -34,6 +34,7 @@ Log in and begin interacting with the LLM.
 ![Chat Interface](./chat_interface.png)
 
 **Suggestions**
+
 I recommend Gemma3 as general model for different tasks.
 
 You can use pubmed search by enabling tools, close it if you don't need it.
