@@ -37,7 +37,7 @@ Log in and begin interacting with the LLM.
 
 I recommend Gemma3 as general model for different tasks.
 
-You can use pubmed search by enabling tools, close it if you don't need it.
+You can use pubmed search by enabling tools (click plus button), close it if you don't need it.
 
 ![Pubmed](./enable_pubmed.jpg)
 
