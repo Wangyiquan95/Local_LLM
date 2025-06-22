@@ -173,4 +173,63 @@ Tools are small Python scripts that add superpowers to your LLM. When enabled, t
 There are two easy ways to install Tools in Open WebUI:
 
 - Go to Community Tool Library -> Choose a Tool, then click the Get button -> Enter your Open WebUI instance’s IP address or URL -> Click “Import to WebUI” — done!
-- write custom tool using python 
+- write custom tool using python
+
+### (optional) 11. Add ollama to your VScode
+
+First, you need ssh connection if you are using remote server: 
+
+```
+ssh -N -L 8080:localhost:8080 -L 11434:localhost:11434 user@server.ip.address
+```
+second, install continue extension on you vscode.
+
+Once installed you should now have a 'continue' tab in the side bar. Open this.
+
+Click on the Assistant selector above the main chat input. Then hover over "Local Assistant" and you should see a settings icon (looks like a cog).
+
+Once you click on the settings icon, a config.yaml should open up in the editor. 
+
+Here you'll be able to configure continue to use ollama on vscode.
+```
+name: Local Assistant
+version: 1.0.0
+models:
+  - name: qwen2.5-coder
+    provider: ollama
+    model: qwen2.5-coder:latest
+    roles:
+      - chat
+      - edit
+      - apply
+      - autocomplete
+    defaultCompletionOptions:
+      contextLength: 200000
+      maxTokens: 64000
+  - name: nomic-embed-text
+    provider: ollama
+    model: nomic-embed-text:latest
+    embedOptions:
+      maxChunkSize: 8192
+    roles:
+      - embed
+context:
+  - provider: file
+```
+
+### (optional) 12. Add ollama to n8n workflow
+
+First, install Docker(https://www.docker.com/) and open it.
+
+Open terminal to install and run n8n locally:
+```
+docker volume create n8n_data
+docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n
+```
+Once running, you can access n8n by opening: http://localhost:5678
+
+Start by adding a Chat trigger node, which is the workflow starting point for building chat interfaces with n8n.
+
+Then, add a Ollama Model Node, set the base url: http://host.docker.internal:11434
+
+Select model and start build workflow
