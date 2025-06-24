@@ -228,6 +228,25 @@ docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n
 ```
 Once running, you can access n8n by opening: http://localhost:5678
 
+Optionally, install n8n by npm:
+```
+# Download and install nvm:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+# restarting the shell
+# Download and install Node.js:
+nvm install 22
+# Verify the Node.js version:
+node -v # Should print "v22.16.0".
+nvm current # Should print "v22.16.0".
+# Verify npm version:
+npm -v # Should print "10.9.2".
+# install n8n
+npm install n8n -g
+# After the installation, start n8n by running:
+n8n
+```
+
+
 Start by adding a Chat trigger node, which is the workflow starting point for building chat interfaces with n8n.
 
 Then, add a Ollama Model Node, set the base url: http://host.docker.internal:11434
