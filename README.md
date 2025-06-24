@@ -249,6 +249,6 @@ n8n
 
 Start by adding a Chat trigger node, which is the workflow starting point for building chat interfaces with n8n.
 
-Then, add a Ollama Model Node, set the base url: http://host.docker.internal:11434
+Then, add a Ollama Model Node, set the base url: http://host.docker.internal:11434 (http://host.docker.internal:11434 for non-docker)
 
 Select model and start build workflow
