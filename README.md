@@ -47,6 +47,7 @@ In a new terminal session (or using tmux), run the following command to install 
 pip install open-webui
 open-webui serve --port 8080
 
+pip install --upgrade open-webui #update to latest
 ```
 ### 4. Connect from Your PC
 To connect from your local PC, use SSH port forwarding:
