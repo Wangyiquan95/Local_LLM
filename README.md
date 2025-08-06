@@ -15,6 +15,7 @@ curl -fsSL https://ollama.com/install.sh | sh
 #### else, do this:
 ```sh
 curl -L https://ollama.com/download/ollama-linux-amd64.tgz -o ollama-linux-amd64.tgz
+curl -L https://github.com/ollama/ollama/releases/download/v0.11.3/ollama-linux-amd64.tgz -o ollama-linux-amd64-11-3.tgz # for update
 tar -xvzf ollama-linux-amd64.tgz -C ollama
 
 ```
