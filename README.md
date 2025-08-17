@@ -254,3 +254,32 @@ Start by adding a Chat trigger node, which is the workflow starting point for bu
 Then, add a Ollama Model Node, set the base url: http://host.docker.internal:11434 (http://host.docker.internal:11434 for non-docker)
 
 Select model and start build workflow
+
+### (optional) 13. develop ollama-supported tools
+
+#### Example one: clipboard as context to chat with ollama on laptop. (ssh server + writing-assistant)
+
+to start: 
+```
+# Clone the repository
+git clone <repository-url>
+cd writing-assistant
+
+# Install Python dependencies
+pip install -r requirements.txt
+
+# Run the application
+python main.py
+```
+#### Example two: chat with Word using ollama on laptop. (ssh server + ollama-word-addin)
+to start: 
+```
+# Clone the repository
+git clone <repository-url>
+#Install dependencies**:
+npm install
+# start server
+npm start
+# Sideload the add-in in Word for Mac
+cp manifest.xml ~/Library/Containers/com.microsoft.Word/Data/Documents/wef/
+```
