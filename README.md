@@ -2,7 +2,7 @@
 
 This guide will walk you through setting up the **open** source model like DeepSeek and running it locally with a chat UI (100% free).
 
-## Complete Guide to Run Local Model like DeepSeek on Server and Chat with Your Own PC
+## Complete Guide to Run Local Model on Server and Chat with Your Own PC
 
 ### 1. Install Ollama on Remote Server
 
