@@ -1,6 +1,6 @@
 # LLM_local_setup
 
-This guide will walk you through setting up the **DeepSeek** model or other models and running it locally with a chat UI (100% free).
+This guide will walk you through setting up the **open** source model like DeepSeek and running it locally with a chat UI (100% free).
 
 ## Complete Guide to Run Local DeepSeek on Server and Chat with Your Own PC
 
