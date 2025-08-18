@@ -262,7 +262,7 @@ Select model and start build workflow
 to start: 
 ```
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/Wangyiquan95/ollama-writing-assistant
 cd writing-assistant
 
 # Install Python dependencies
@@ -275,7 +275,7 @@ python main.py
 to start: 
 ```
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/Wangyiquan95/ollama-word-addin
 #Install dependencies**:
 npm install
 # start server
